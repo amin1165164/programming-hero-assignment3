@@ -1,7 +1,8 @@
+// https://github.com/amin1165164/programming-hero-assignment3
 
 // 1. convert kilometer to meter.
 function kilometerToMeter(kilometer){
-    if(kilometer<0){
+    if(kilometer < 0){
         return 'You have placed a wrong input. Distance cannot be a negative value.';
     }
     else{
@@ -9,16 +10,17 @@ function kilometerToMeter(kilometer){
         return meter;
     }
 }
-var result = kilometerToMeter(-5);
-console.log(result);
+// var result = kilometerToMeter(5);
+// console.log(result);
 
 
 //2. creating a calculator for budget calculation.
+ 
 function budgetCalculator(watchQuantity, phoneQuantity, laptopQuantity){
     var watchPrice = 50;
     var phonePrice = 100;
     var laptopPrice = 500;
-    if(watchQuantity < 0 | phoneQuantity < 0 | laptopQuantity < 0){
+    if(watchQuantity < 0 || phoneQuantity < 0 || laptopQuantity < 0){
         return 'Please input a positive value as quantity for calculation your budget.'
     }
     else{
@@ -26,14 +28,15 @@ function budgetCalculator(watchQuantity, phoneQuantity, laptopQuantity){
         return total;
     }
 }
-var result = budgetCalculator(1,1,1);
-console.log(result);
+// var result = budgetCalculator(3,2,4);
+// console.log(result);
 
 
 // 3. calculation of hotel cost.
+
 function hotelCost(day){
     if(day<0){
-        return 'you cannot stay any negative day';
+        return 'you cannot place any negative value as day.';
     }
     else if(day <= 10){
         var stayCost = day * 100;
@@ -55,12 +58,13 @@ function hotelCost(day){
         return totalStayCost;
     }
 }
-var result = hotelCost(25);
-console.log(result);
+// var result = hotelCost(90);
+// console.log(result);
 
 
-// find the largest string from an array.
-var bossomFriend = ["aminul","salman", "jafihnj", "bakinhj"];
+// 4. find the largest string from an array.
+
+// var bossomFriend = ["shaon","salman", "rumman", "nahian", "redhoan", "shakhauat"];
 function megaFriend(jigriFriends){
     var friend = jigriFriends[0];
     for (var i = 0; i < jigriFriends.length; i++){
@@ -73,5 +77,5 @@ function megaFriend(jigriFriends){
     }
     return friend;
 }
-var result = megaFriend(bossomFriend);
-console.log(result);
+// var result = megaFriend(bossomFriend);
+// console.log(result);
